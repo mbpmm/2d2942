@@ -5,6 +5,7 @@ using UnityEngine;
 public class BackgroundMovement : MonoBehaviour
 {
     public float speed;
+    private float timer;
     MeshRenderer backRenderer;
     // Start is called before the first frame update
     void Start()
@@ -15,7 +16,8 @@ public class BackgroundMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 offset = new Vector2(0, Time.time * speed);
+        timer += Time.deltaTime;
+        Vector2 offset = new Vector2(0, timer * speed);
         backRenderer.material.mainTextureOffset = offset;
     }
 }

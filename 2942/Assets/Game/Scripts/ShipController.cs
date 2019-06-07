@@ -7,18 +7,43 @@ public class ShipController : MonoBehaviour
     public float speed;
     public float vertical;
     public float horizontal;
+    public GameObject bullet;
+    public GameObject bulletEmitter;
+    private Rigidbody2D playerRB;
+    private float limMax, limXMin, limYMin;
+   
     // Start is called before the first frame update
     void Start()
     {
-        
+        playerRB = GetComponent<Rigidbody2D>();
+        limMax = 0.96f;
+        limXMin = 0.04f;
+        limYMin = 0.07f;
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        vertical = Input.GetAxisRaw("Vertical") ;
-        horizontal = Input.GetAxisRaw("Horizontal");
+        vertical = Input.GetAxis("Vertical");
+        horizontal = Input.GetAxis("Horizontal");
+        Vector3 movement = new Vector3(horizontal, vertical, 0);
 
-        transform.position += new Vector3(transform.position.x * horizontal * Time.deltaTime * -1f * speed, transform.position.y * vertical * Time.deltaTime * -1f * speed);
+        playerRB.velocity = movement * speed;
+
+        Vector3 pos = Camera.main.WorldToViewportPoint(transform.position);
+        pos.x = Mathf.Clamp(pos.x, limXMin, limMax);
+        pos.y = Mathf.Clamp(pos.y, limYMin, limMax);
+        transform.position = Camera.main.ViewportToWorldPoint(pos);
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            Shoot();
+        }
+    }
+
+    void Shoot()
+    {
+        GameObject bulletAux;
+        bulletAux = Instantiate(bullet, bulletEmitter.transform.position, bulletEmitter.transform.rotation);
     }
 }
