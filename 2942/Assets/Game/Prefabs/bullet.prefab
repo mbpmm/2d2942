@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 212668463278289586}
   - component: {fileID: 8970355434237706412}
   m_Layer: 0
-  m_Name: fireball-blue-med
+  m_Name: bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93,3 +93,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  lifeSpan: 2
