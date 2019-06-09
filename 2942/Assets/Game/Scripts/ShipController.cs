@@ -8,6 +8,7 @@ public class ShipController : MonoBehaviour
     public float vertical;
     public float horizontal;
     public GameObject bullet;
+    public GameObject missile;
     public GameObject bulletEmitter;
     private Rigidbody2D playerRB;
     private float limMax, limXMin, limYMin;
@@ -39,11 +40,21 @@ public class ShipController : MonoBehaviour
         {
             Shoot();
         }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ShootMissile();
+        }
     }
 
     void Shoot()
     {
         GameObject bulletAux;
         bulletAux = Instantiate(bullet, bulletEmitter.transform.position, bulletEmitter.transform.rotation);
+    }
+
+    void ShootMissile()
+    {
+        GameObject missileAux;
+        missileAux= Instantiate(missile, bulletEmitter.transform.position, bulletEmitter.transform.rotation);
     }
 }
