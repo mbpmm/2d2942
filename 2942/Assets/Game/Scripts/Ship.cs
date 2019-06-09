@@ -5,6 +5,7 @@ using UnityEngine;
 public class Ship : MonoBehaviour
 {
     public float energy;
+    public float cantMissiles;
     void Start()
     {
         

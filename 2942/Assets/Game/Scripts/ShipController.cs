@@ -12,6 +12,8 @@ public class ShipController : MonoBehaviour
     public GameObject bulletEmitter;
     private Rigidbody2D playerRB;
     private float limMax, limXMin, limYMin;
+    public float fireRate;
+    private float nextFire;
    
     // Start is called before the first frame update
     void Start()
@@ -36,8 +38,9 @@ public class ShipController : MonoBehaviour
         pos.y = Mathf.Clamp(pos.y, limYMin, limMax);
         transform.position = Camera.main.ViewportToWorldPoint(pos);
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0)&&Time.time>nextFire)
         {
+            nextFire = Time.time + fireRate;
             Shoot();
         }
         if (Input.GetKeyDown(KeyCode.Space))
@@ -55,6 +58,6 @@ public class ShipController : MonoBehaviour
     void ShootMissile()
     {
         GameObject missileAux;
-        missileAux= Instantiate(missile, bulletEmitter.transform.position, bulletEmitter.transform.rotation);
+        missileAux= Instantiate(missile, bulletEmitter.transform.position, Quaternion.Euler(0,0,0));
     }
 }
