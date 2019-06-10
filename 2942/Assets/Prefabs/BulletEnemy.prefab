@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4625385491732918}
   - component: {fileID: 212668463278289586}
-  - component: {fileID: 8970355434237706412}
-  - component: {fileID: 2593696375017778768}
+  - component: {fileID: 861265109435589082}
+  - component: {fileID: 1847179926229851089}
   m_Layer: 0
-  m_Name: Bullet
-  m_TagString: Bullet
+  m_Name: BulletEnemy
+  m_TagString: BulletEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -70,8 +70,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300024, guid: 8aeb9e233fbb8f14db39770841b78b94, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300012, guid: 8aeb9e233fbb8f14db39770841b78b94, type: 3}
+  m_Color: {r: 1, g: 0, b: 0.9735141, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8970355434237706412
+--- !u!114 &861265109435589082
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -90,12 +90,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1818211600377138}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba6b5ec40b8ac354e8ce5c6713ca2725, type: 3}
+  m_Script: {fileID: 11500000, guid: eda3fb55208b25d41a5d4ecc7c503679, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  lifeSpan: 2
---- !u!58 &2593696375017778768
+  speed: 2.24
+  lifeSpan: 3.98
+--- !u!58 &1847179926229851089
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -5,15 +5,25 @@ using UnityEngine;
 public class Ship : MonoBehaviour
 {
     public float energy;
-    public float cantMissiles;
+    public int cantMissiles;
+    private float damageReceived;
     void Start()
     {
-        
+        damageReceived = 10f;
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag=="BulletEnemy")
+        {
+            energy -= damageReceived;
+            Debug.Log(energy);
+        }
     }
 }

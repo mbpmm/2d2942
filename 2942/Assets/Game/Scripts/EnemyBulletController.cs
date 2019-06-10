@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletController : MonoBehaviour
+public class EnemyBulletController : MonoBehaviour
 {
     public float speed;
     public float lifeSpan;
@@ -28,7 +28,7 @@ public class BulletController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag=="Enemy")
+        if (collision.tag=="Player")
         {
             Destroy(gameObject);
         }

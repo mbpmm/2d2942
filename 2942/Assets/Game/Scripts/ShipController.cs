@@ -14,11 +14,12 @@ public class ShipController : MonoBehaviour
     private float limMax, limXMin, limYMin;
     public float fireRate;
     private float nextFire;
-   
+    private Ship ship;
     // Start is called before the first frame update
     void Start()
     {
         playerRB = GetComponent<Rigidbody2D>();
+        ship = GetComponent<Ship>();
         limMax = 0.96f;
         limXMin = 0.04f;
         limYMin = 0.07f;
@@ -43,9 +44,10 @@ public class ShipController : MonoBehaviour
             nextFire = Time.time + fireRate;
             Shoot();
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space)&&ship.cantMissiles>0)
         {
             ShootMissile();
+            ship.cantMissiles--;
         }
     }
 
