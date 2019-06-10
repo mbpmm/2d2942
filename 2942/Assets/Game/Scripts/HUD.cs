@@ -7,9 +7,7 @@ public class HUD : MonoBehaviour
 {
     public Slider energyBar;
     public GameObject player;
-    public RawImage missile1;
-    public RawImage missile2;
-    public RawImage missile3;
+    public RawImage[] missiles;
     private Ship ship;
     // Start is called before the first frame update
     void Start()
@@ -26,30 +24,9 @@ public class HUD : MonoBehaviour
             energyBar.fillRect.gameObject.SetActive(false);
         }
 
-        switch (ship.cantMissiles)
+        for (int i = 0; i < missiles.Length; i++)
         {
-            case 0:
-                missile1.gameObject.SetActive(false);
-                missile2.gameObject.SetActive(false);
-                missile3.gameObject.SetActive(false);
-                break;
-            case 1:
-                missile1.gameObject.SetActive(true);
-                missile2.gameObject.SetActive(false);
-                missile3.gameObject.SetActive(false);
-                break;
-            case 2:
-                missile1.gameObject.SetActive(true);
-                missile2.gameObject.SetActive(true);
-                missile3.gameObject.SetActive(false);
-                break;
-            case 3:
-                missile1.gameObject.SetActive(true);
-                missile2.gameObject.SetActive(true);
-                missile3.gameObject.SetActive(true);
-                break;
-            default:
-                break;
+            missiles[i].gameObject.SetActive(i < ship.cantMissiles);
         }
     }
 }

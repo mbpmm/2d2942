@@ -132,12 +132,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b81267d6523517438a8b85eacca3445, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  state: 0
+  state: 1
   speed: 0.6
   rotateSpeed: 33.86
   bulletEmitter: {fileID: 8225196588049625991}
   bullet: {fileID: 1818211600377138, guid: 2d606b07c184bfc41834ceacb5f11f0f, type: 3}
   bulletDelay: 0.43
+  timer: 0
   hp: 1.63
   target: {fileID: 0}
 --- !u!50 &6073465755789522392

@@ -9,7 +9,11 @@ public class AudioManager : MonoBehaviour
     [Header("Sound Options")]
     public bool soundOn = true;
     public bool musicOn = true;
+    public Dictionary<string, AudioClip> audios;
+    public SoundZ[] sfxs;
+    public AudioClip[] musics;
 
+    [System.Serializable]
     public class SoundZ
     {
         public string soundName;
@@ -28,9 +32,7 @@ public class AudioManager : MonoBehaviour
         MainMenu,
     }
 
-    public Dictionary<string, AudioClip> audios;
-    public SoundZ[] sfxs;
-    public AudioClip[] musics;
+    
 
     public static AudioManager Get()
     {

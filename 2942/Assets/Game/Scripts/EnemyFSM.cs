@@ -7,6 +7,7 @@ public class EnemyFSM : MonoBehaviour
     public enum EnemyState
     {
         GoingToTarget,
+        Function1,
         Last,
     }
 
@@ -17,6 +18,7 @@ public class EnemyFSM : MonoBehaviour
     public GameObject bulletEmitter;
     public GameObject bullet;
     public float bulletDelay;
+    public float timer;
     public float hp;
 
     public Transform target;
@@ -25,6 +27,7 @@ public class EnemyFSM : MonoBehaviour
 
     private void Start()
     {
+        timer = -6f;
         player = GameObject.Find("Player");
         target = player.transform;
         rb = GetComponent<Rigidbody2D>();
@@ -51,6 +54,11 @@ public class EnemyFSM : MonoBehaviour
 
                     bulletDelay = 0;
                 }
+                break;
+            case EnemyState.Function1:
+                timer += Time.deltaTime;
+                float y = Mathf.Cos(timer*2f)*1.5f;
+                transform.position = new Vector2(timer,y);
                 break;
         }
     }
