@@ -84,6 +84,7 @@ public class EnemyFSM : MonoBehaviour
         if (hp<=0)
         {
             Explode();
+            
         }
         else if(transform.position.x>screenLimit)
         {
@@ -108,7 +109,10 @@ public class EnemyFSM : MonoBehaviour
         if (other.tag == "Bullet")
         {
             hp -= 10;
-            Debug.Log(hp);
+        }
+        if (other.tag=="MissileExp")
+        {
+            Explode();
         }
 
     }

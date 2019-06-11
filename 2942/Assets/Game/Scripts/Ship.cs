@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Ship : MonoBehaviour
 {
+    public GameObject explosion;
     public float energy;
     public int cantMissiles;
     private float damageReceived;
@@ -15,7 +16,17 @@ public class Ship : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (energy <= 0)
+        {
+            Explode();
+        }
+    }
+
+    private void Explode()
+    {
+        GameObject expAux;
+        expAux = Instantiate(explosion, transform.position, Quaternion.identity);
+        gameObject.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

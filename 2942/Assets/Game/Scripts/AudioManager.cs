@@ -9,7 +9,7 @@ public class AudioManager : MonoBehaviour
     [Header("Sound Options")]
     public bool soundOn = true;
     public bool musicOn = true;
-    public Dictionary<string, AudioClip> audios;
+    public Dictionary<string, AudioClip> audios=new Dictionary<string, AudioClip>();
     public SoundZ[] sfxs;
     public AudioClip[] musics;
 

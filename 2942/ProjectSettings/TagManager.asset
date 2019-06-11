@@ -8,6 +8,7 @@ TagManager:
   - MissileExpPoint
   - BulletEnemy
   - Enemy
+  - MissileExp
   layers:
   - Default
   - TransparentFX

@@ -255,7 +255,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.52
-  m_Pitch: 0.8
+  m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
@@ -1000,6 +1000,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2cf51bfe69dd10439bdbc9638e4d67f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosion: {fileID: 7652418584973336438, guid: f6a73d872a5b46b48ac76abdd6616b9d,
+    type: 3}
   energy: 100
   cantMissiles: 3
 --- !u!114 &580387605
@@ -6419,7 +6421,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a81404c07effc864396380bb3f4bc3f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.06
+  speed: 0.1
 --- !u!64 &1538307825
 MeshCollider:
   m_ObjectHideFlags: 0

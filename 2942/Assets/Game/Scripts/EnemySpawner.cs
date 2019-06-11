@@ -19,11 +19,6 @@ public class EnemySpawner : MonoBehaviour
 
     private void Update()
     {
-        //if (waves<=0)
-        //{
-        //    StopCoroutine(spawn);
-        //}
-        Debug.Log(waves);
     }
 
     IEnumerator SpawnWaves()
