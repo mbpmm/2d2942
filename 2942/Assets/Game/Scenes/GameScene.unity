@@ -460,12 +460,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1c3b7e9d8598634c8919c3e2e93699f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 8224773150886272931, guid: efba5c4267046f949acfcc724182e877, type: 3}
+  enemy1: {fileID: 8224773150886272931, guid: efba5c4267046f949acfcc724182e877, type: 3}
+  enemy2: {fileID: 7086811772596911944, guid: 02f71b65e58e9da47acdcbed1838566a, type: 3}
   spawnValues: {x: 5, y: 5, z: 0}
-  enemies: 196
-  spawnWait: 0.14
+  enemies: 5
+  spawnWait: 0.5
   startWait: 1.11
-  waveWait: 0.92
+  waveWait: 12.3
   waves: 3
 --- !u!4 &271730171
 Transform:
@@ -772,7 +773,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4263148741817838, guid: c07ae331f7494a64aa6d24356afebd33, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.098
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4263148741817838, guid: c07ae331f7494a64aa6d24356afebd33, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6110,8 +6111,6 @@ MonoBehaviour:
   - {fileID: 777046258}
   - {fileID: 1319055120}
   - {fileID: 976289145}
-  missile2: {fileID: 384913508}
-  missile3: {fileID: 361597180}
 --- !u!114 &859190884
 MonoBehaviour:
   m_ObjectHideFlags: 0

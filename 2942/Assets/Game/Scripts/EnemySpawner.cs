@@ -3,7 +3,8 @@ using System.Collections;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public GameObject enemy;
+    public GameObject enemy1;
+    public GameObject enemy2;
     public Vector3 spawnValues;
     public int enemies;
     public float spawnWait;
@@ -14,27 +15,35 @@ public class EnemySpawner : MonoBehaviour
     void Start()
     {
         spawn=StartCoroutine(SpawnWaves());
-        waves = 1;
     }
 
     private void Update()
     {
-        if (waves<=0)
-        {
-            StopCoroutine(spawn);
-        }
+        //if (waves<=0)
+        //{
+        //    StopCoroutine(spawn);
+        //}
+        Debug.Log(waves);
     }
 
     IEnumerator SpawnWaves()
     {
         yield return new WaitForSeconds(startWait);
-        while (true)
+        while (waves >= 0)
         {
             for (int i = 0; i < enemies; i++)
             {
                 Vector3 spawnPosition = new Vector3(Random.Range(-spawnValues.x, spawnValues.x), spawnValues.y, spawnValues.z);
                 Quaternion spawnRotation = Quaternion.identity;
-                Instantiate(enemy, spawnPosition, spawnRotation);
+                if (waves%2==0)
+                {
+                    Instantiate(enemy1, spawnPosition, spawnRotation);
+                }
+                else
+                {
+                    Instantiate(enemy2, spawnPosition, spawnRotation);
+                }
+                
                 yield return new WaitForSeconds(spawnWait);
             }
             waves--;

@@ -1,19 +1,20 @@
 fileFormatVersion: 2
-guid: bf8ddafe189b90247b484ca8b8e3ceca
+guid: 88fa258f647e4e64ebcbf0340574a074
 TextureImporter:
   fileIDToRecycleName:
-    21300000: ship1_0
-    21300002: ship1_1
-    21300004: ship1_2
-    21300006: ship1_3
-    21300008: ship1_4
-    21300010: ship1_5
-    21300012: ship1_6
-    21300014: ship1_7
-    21300016: ship1_8
-    21300018: ship1_9
-    21300020: ship1_10
-    21300022: ship1_11
+    21300000: exp_0
+    21300002: exp_1
+    21300004: exp_2
+    21300006: exp_3
+    21300008: exp_4
+    21300010: exp_5
+    21300012: exp_6
+    21300014: exp_7
+    21300016: exp_8
+    21300018: exp_9
+    21300020: exp_10
+    21300022: exp_11
+    21300024: exp_12
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -92,267 +93,265 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 2
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ship1_0
+      name: exp_0
       rect:
         serializedVersion: 2
         x: 0
         y: 184
         width: 93
         height: 72
-      alignment: 9
-      pivot: {x: 0.45698926, y: 0.5}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebcb1874a7e73d6488e7d8ab0f7ad83c
+      spriteID: ba81245a9a1209449956970a3af10c58
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ship1_1
+      name: exp_1
       rect:
         serializedVersion: 2
         x: 93
         y: 184
         width: 93
         height: 72
-      alignment: 9
-      pivot: {x: 0.45698926, y: 0.5}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43ab733e61edaba4e8f539648706c607
+      spriteID: 414470386ec771849ab0b82a92d68ea6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ship1_2
+      name: exp_2
       rect:
         serializedVersion: 2
-        x: 186
+        x: 188
         y: 184
         width: 93
         height: 72
-      alignment: 9
-      pivot: {x: 0.45698926, y: 0.5}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 043a9e877d2d0b64b91a640aab34de51
+      spriteID: 4a97a77669714e8458992c3867dc65e8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ship1_3
+      name: exp_3
       rect:
         serializedVersion: 2
         x: 279
         y: 184
         width: 93
         height: 72
-      alignment: 9
-      pivot: {x: 0.45698926, y: 0.5}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfa6e47f098a35b439a1a2e03cf0c3aa
+      spriteID: 03a7792d0eea3ca4e9a3d91a5d9628d4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ship1_4
+      name: exp_4
       rect:
         serializedVersion: 2
         x: 372
         y: 184
         width: 93
         height: 72
-      alignment: 9
-      pivot: {x: 0.45698926, y: 0.5}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26e78052738737d4eb8fbe1bfef81675
+      spriteID: 57490249f893f5e4bbd798f044bca06f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ship1_5
+      name: exp_5
       rect:
         serializedVersion: 2
         x: 0
         y: 112
         width: 93
         height: 72
-      alignment: 9
-      pivot: {x: 0.45698926, y: 0.5}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2671013c53b98f04f897c2bb47a2224c
+      spriteID: 6915b81984d4c62478739d8911f1ff47
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ship1_6
+      name: exp_6
       rect:
         serializedVersion: 2
         x: 93
         y: 112
         width: 93
         height: 72
-      alignment: 9
-      pivot: {x: 0.45698926, y: 0.5}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc2e5319540a22e429f54626c6bb5b04
+      spriteID: 4720e1909fedf7e478fee56a59d35c02
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ship1_7
+      name: exp_7
       rect:
         serializedVersion: 2
         x: 186
         y: 112
         width: 93
         height: 72
-      alignment: 9
-      pivot: {x: 0.45698926, y: 0.5}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fdeacfd7fc28a9141b92f02cff4a773b
+      spriteID: ec4a07d0c265291479ebb0977cfbc1be
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ship1_8
+      name: exp_8
       rect:
         serializedVersion: 2
         x: 279
         y: 112
         width: 93
         height: 72
-      alignment: 9
-      pivot: {x: 0.45698926, y: 0.5}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10056318c03e7e1438328d25445b4c08
+      spriteID: 9d2f2f3a6dc6ed34e8d21213fbbf7240
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ship1_9
+      name: exp_9
       rect:
         serializedVersion: 2
         x: 372
         y: 112
         width: 93
         height: 72
-      alignment: 9
-      pivot: {x: 0.45698926, y: 0.5}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d68e1bd50f5bff14d98537104dcc47f9
+      spriteID: b7caf2691b12b9e408da09c71ed977a4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ship1_10
+      name: exp_10
       rect:
         serializedVersion: 2
         x: 0
         y: 40
         width: 93
         height: 72
-      alignment: 9
-      pivot: {x: 0.45698926, y: 0.5}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51e6adfc7999e95478cd0a92e9044440
+      spriteID: 1fd992a7aeb5d66488dd94b2d13adab6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ship1_11
+      name: exp_11
       rect:
         serializedVersion: 2
         x: 93
         y: 40
         width: 93
         height: 72
-      alignment: 9
-      pivot: {x: 0.45698926, y: 0.5}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a5ee23173b1944428be29a18b395ac1
+      spriteID: d859be9e357995e45b360a824a0d6c70
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: exp_12
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 39
+        width: 93
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 695e4278963403c44a4f6977582277c9
       vertices: []
       indices: 
       edges: []
@@ -360,7 +359,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: c05231141ea1fba488a37f0d7cf9d0ae
+    spriteID: 0cdf03c558b791545b6e228e88c9c01c
     vertices: []
     indices: 
     edges: []
