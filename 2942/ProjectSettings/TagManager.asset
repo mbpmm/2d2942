@@ -9,6 +9,8 @@ TagManager:
   - BulletEnemy
   - Enemy
   - MissileExp
+  - EPU
+  - SPU
   layers:
   - Default
   - TransparentFX

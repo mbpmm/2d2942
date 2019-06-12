@@ -36,5 +36,10 @@ public class Ship : MonoBehaviour
             energy -= damageReceived;
             Debug.Log(energy);
         }
+        if (collision.tag == "EPU")
+        {
+            energy += damageReceived;
+            Debug.Log(energy);
+        }
     }
 }

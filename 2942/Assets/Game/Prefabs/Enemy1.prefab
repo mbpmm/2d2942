@@ -129,6 +129,9 @@ MonoBehaviour:
   timer: 0
   hp: 50
   target: {fileID: 0}
+  item1: {fileID: 6684938047147634447, guid: a0f321d5b98d24241b23e4d372270d6c, type: 3}
+  item2: {fileID: 3013587580438741212, guid: fb7b831ea6724224fa969c5dae5d71ee, type: 3}
+  dropRate: 0.34
 --- !u!50 &6073465755789522392
 Rigidbody2D:
   serializedVersion: 4

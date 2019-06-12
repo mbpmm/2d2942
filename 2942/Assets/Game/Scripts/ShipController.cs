@@ -8,11 +8,17 @@ public class ShipController : MonoBehaviour
     public float vertical;
     public float horizontal;
     public GameObject bullet;
+    public GameObject bulletPU;
     public GameObject missile;
     public GameObject bulletEmitter;
-    private Rigidbody2D playerRB;
-    private float limMax, limXMin, limYMin;
+    public GameObject bulletEmitter2;
+    public GameObject bulletEmitter3;
     public float fireRate;
+
+    private float powerUpDuration;
+    private bool powerUp;
+    private Rigidbody2D playerRB;
+    private float limMax, limXMin, limYMin; 
     private float nextFire;
     private Ship ship;
     // Start is called before the first frame update
@@ -42,12 +48,25 @@ public class ShipController : MonoBehaviour
         if (Input.GetMouseButton(0)&&Time.time>nextFire)
         {
             nextFire = Time.time + fireRate;
-            Shoot();
+            if (powerUp)
+                ShootPowerUp();
+            else
+                Shoot();
         }
         if (Input.GetKeyDown(KeyCode.Space)&&ship.cantMissiles>0)
         {
             ShootMissile();
             ship.cantMissiles--;
+        }
+
+        if (powerUp)
+        {
+            powerUpDuration += Time.deltaTime;
+            if (powerUpDuration>8f)
+            {
+                powerUp = false;
+                powerUpDuration = 0f;
+            }
         }
     }
 
@@ -61,5 +80,22 @@ public class ShipController : MonoBehaviour
     {
         GameObject missileAux;
         missileAux= Instantiate(missile, bulletEmitter.transform.position, Quaternion.Euler(0,0,0));
+    }
+
+    void ShootPowerUp()
+    {
+        GameObject bulletAux;
+        bulletAux = Instantiate(bulletPU, bulletEmitter.transform.position, bulletEmitter.transform.rotation);
+        GameObject bulletAux2;
+        bulletAux2 = Instantiate(bulletPU, bulletEmitter2.transform.position, bulletEmitter3.transform.rotation);
+        GameObject bulletAux3;
+        bulletAux3 = Instantiate(bulletPU, bulletEmitter3.transform.position, bulletEmitter3.transform.rotation);
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag=="SPU")
+        {
+            powerUp = true;
+        }
     }
 }

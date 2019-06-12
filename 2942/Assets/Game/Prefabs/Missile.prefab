@@ -99,7 +99,8 @@ MonoBehaviour:
   missileRotSpeed: 190.61
   cam: {fileID: 0}
   cameraShake: {fileID: 0}
-  explosion: {fileID: 139366, guid: b185c1a9cf067374586d095111b15bd1, type: 3}
+  explosion: {fileID: 133540997392000768, guid: 033ac9b28d928934faea1cd471598b5d,
+    type: 3}
 --- !u!50 &4585538165131119527
 Rigidbody2D:
   serializedVersion: 4
@@ -157,7 +158,7 @@ Animator:
   m_GameObject: {fileID: 832368920485787162}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 63cb1f279b967214eb2c708f55a6f209, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
