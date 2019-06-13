@@ -3,3 +3,6 @@
 - Musica de http://www.nihilore.com/synthwave.
 - Power ups: "Space Shooter Enviroment", ansimuz, https://ansimuz.itch.io/spaceship-shooter-environment.
 - Background nivel 2: "Space Background", ansimuz, https://ansimuz.itch.io/space-background.
+- "Shooting_Sounds_003.wav", jalastram, https://freesound.org/people/jalastram/sounds/362455/.
+-"Space Explosion with reverb", morganpurkis, https://freesound.org/people/morganpurkis/sounds/394127/.
+-"Landing Bomb", djfroyd, https://freesound.org/people/djfroyd/sounds/353421/.

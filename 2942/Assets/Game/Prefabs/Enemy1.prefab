@@ -127,7 +127,7 @@ MonoBehaviour:
   bulletDelay: 1.24
   bulletTime: 0
   timer: 0
-  hp: 50
+  hp: 70
   target: {fileID: 0}
   item1: {fileID: 6684938047147634447, guid: a0f321d5b98d24241b23e4d372270d6c, type: 3}
   item2: {fileID: 3013587580438741212, guid: fb7b831ea6724224fa969c5dae5d71ee, type: 3}
@@ -163,7 +163,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
