@@ -7,12 +7,10 @@ public class UILogin : MonoBehaviour
 {
     public GameObject optionsPanel;
     public GameObject registerLogin;
-    public Text titleTextLogin;
-    public Text titleTextRegister;
     public Button registerButton;
     public Button loginButton;
-
-    // Start is called before the first frame update
+    public Text textLogin;
+    public Text textRegister;
     void Start()
     {
         optionsPanel.SetActive(true);
@@ -24,10 +22,8 @@ public class UILogin : MonoBehaviour
         registerLogin.SetActive(true);
         loginButton.gameObject.SetActive(true);
         registerButton.gameObject.SetActive(false);
-
-        titleTextLogin.gameObject.SetActive(true);
-        titleTextRegister.gameObject.SetActive(false);
-
+        textLogin.gameObject.SetActive(true);
+        textRegister.gameObject.SetActive(false);
         optionsPanel.SetActive(false);
     }
 
@@ -37,15 +33,14 @@ public class UILogin : MonoBehaviour
         registerLogin.SetActive(true);
         loginButton.gameObject.SetActive(false);
         registerButton.gameObject.SetActive(true);
-
-        titleTextLogin.gameObject.SetActive(false);
-        titleTextRegister.gameObject.SetActive(true);
+        textLogin.gameObject.SetActive(false);
+        textRegister.gameObject.SetActive(true);
     }
 
     public void Options()
     {
-        titleTextLogin.gameObject.SetActive(false);
-        titleTextRegister.gameObject.SetActive(false);
+        textLogin.gameObject.SetActive(false);
+        textRegister.gameObject.SetActive(false);
         optionsPanel.SetActive(true);
         registerLogin.SetActive(false);
     }

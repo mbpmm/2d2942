@@ -61,11 +61,32 @@ public class GameManager : MonoBehaviourSingleton<GameManager>
     {
         SceneManager.LoadScene("FinalScene");
         win = false;
+        GameObject db = GameObject.Find("DataBase");
+        DataBase dataBase = db.GetComponent<DataBase>();
+        dataBase.Load();
+        int playerScore = int.Parse(dataBase.scoreText.text);
+
+        if (playerScore<score)
+        {
+            dataBase.score = score;
+            dataBase.Save();
+        }
+        
     }
 
     void PlayerWin()
     {
         SceneManager.LoadScene("FinalScene");
         win = true;
+        GameObject db = GameObject.Find("DataBase");
+        DataBase dataBase = db.GetComponent<DataBase>();
+        dataBase.Load();
+        int playerScore = int.Parse(dataBase.scoreText.text);
+
+        if (playerScore < score)
+        {
+            dataBase.score = score;
+            dataBase.Save();
+        }
     }
 }
