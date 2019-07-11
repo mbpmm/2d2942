@@ -39,7 +39,7 @@ public class LogoFade : MonoBehaviour
 
         if (disapear <= 0)
         {
-            SceneManager.LoadScene("IntroScene");
+            SceneManager.LoadScene("LoginScene");
         }
     }
 }
